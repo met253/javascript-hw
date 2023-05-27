@@ -24,12 +24,27 @@ for (let i = 0; i < arrayLong.length; i += 1) {
   }
 }
 //6
+// const numbers = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 ,9 , 10];
+// let maxNumber = numbers[0]
+// for (const number of numbers ) {
+//     if (number > maxNumber) {
+//         maxNumber = number
+//     }
+// }
+// console.log(maxNumber);
+
+
+
+//
 const numbers = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 ,9 , 10];
-let maxNumber = numbers[0]
-for (const number of numbers ) {
+const findMaxNumber = function(arrayNumbers) { 
+  let maxNumber = numbers[0]
+ for (const number of numbers ) {
     if (number > maxNumber) {
-        maxNumber = number
+       maxNumber = number
     }
+ }
+ return maxNumber, 
 }
 console.log(maxNumber);
 //
