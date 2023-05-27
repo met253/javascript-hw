@@ -1,6 +1,6 @@
 //
 
-/const a1 = 5; // ? Global
+const a1 = 5; // ? Global
  if (true) {
    console.log(a1);
    const a2 = 88; //? Local
