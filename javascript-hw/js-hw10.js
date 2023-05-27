@@ -1,11 +1,12 @@
-let numbers = [1 , 2 , 3];
-const numbersAdd = [4 , 5 , 6]numbers.push;
-console.log(numbersAdd);
+const numbers = [1, 2, 3];
+
+numbers.push(4, 5, 6);
+console.log(numbers);
 
 //
 
 const arrey = [1, 2, 3];
-for (let i = 1; i <= 6; i+) {
+for (let i = 0; i <= 6; i++) {
     arrey.unshift(i);
 }
 console.log(arrey);
