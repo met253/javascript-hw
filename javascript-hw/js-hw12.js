@@ -1,17 +1,116 @@
-const cookPizza = () =>  "Pizzaz is cooking";
-const completet = cookPizza();
-const igjghk = cookPizza;
+// function makePizza() {
+
+//   return "Your pizza is being prepared, please wait.";
+
+// }
+
+
+// const result = makePizza();
+
+// const pointer = makePizza;
+
+// console.log(result);
+
+// console.log(pointer);
+
+
+
+// //
+
+// function deliverPizza(pizzaName) {
+
+//   return `Delivering ${pizzaName} pizza.`;
+
+// }
+
+// function makePizza(pizzaName) {
+
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+
+// }
+
+
+
+// function makeMessage(pizzaName, callback) {
+
+//   return callback(pizzaName);
+ 
+
+// }
+// console.log(makeMessage("peperoni", deliverPizza));
+
 
 //
 
 
-const delivery = (namePizza) => `Here is ${namePizza} your Pizza.`;
+function makePizza(pizzaName, callback) {
 
-
-const madePizza = (pizzaName) => `Pizza ${pizzaName} is cooking.`;
-//
-const hmmm = madePizza("1000 peperoni", function eatPizza(pizzaName) {
-    return `HMM so good pizza ${pizzaName}`;
-  });
+  console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+  return callback(pizzaName);
   
-  console.log(hmm);
+}
+
+makePizza("Royal Grand", function deliverPizza(pizzaName) {
+
+  console.log(`Delivering pizza ${pizzaName}.`);
+
+});
+
+
+makePizza("Ultracheese", function eatPizza(pizzaName) {
+  console.log(`Eating pizza ${pizzaName}`)
+ 
+} );
+
+//
+const btnRef = document.querySelector("[data-hero-btn]");
+const resultRef = document.querySelector("[data-result]");
+let result1 = "Hello world!";
+
+
+const writeAnswer = () => {
+  resultRef.textContent = result1;
+};
+
+btnRef.addEventListener("click", writeAnswer);
+
+//
+const applyCallbackToEachElement = function (arr, callback) {
+
+  return callback(arr);
+   
+
+}
+
+const arr = [1, 2, 3, 4, 5];
+
+const squareCallback = function(arr){
+  arr.pop()
+  arr.push(1)
+
+  arr.shift()
+  arr.unshift(5)
+
+  return arr;
+}; 
+
+const result = applyCallbackToEachElement(arr, squareCallback);
+
+console.log(result); // [1, 4, 9, 16, 25]
+///
+
+
+const calculateDiscountedPrice = (price, discount, callback) => {
+  const discountedPrice = price - discount;
+  callback(discountedPrice);
+};
+const showDiscountedPrice = (discountedPrice) => {
+  console.log(discountedPrice);
+  return discountedPrice;
+};
+calculateDiscountedPrice(100, 10, showDiscountedPrice); // Discounted price: 90
+
+
+
+
+
