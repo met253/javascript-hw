@@ -1,6 +1,7 @@
 const playlist = {
     name: "Top 2023",
     rating: 10,
+
     tracks: [
         {
             trackName: "Stefania",
@@ -20,14 +21,32 @@ const playlist = {
             language: "Urdu",
             popular: false
         }
+
     ],
+    showTrack() {
+
+        const trackFind = this.tracks[1]
+        console.log(trackFind.trackName)
+        console.log(trackFind);
+    },
+    changeName(newName) {
+        this.tracks[2].trackName = newName;
 
 
+    },
+    countTracks() {
+        return this.tracks.length;
+     
+    }
 }
-function showPlayList(playlist) {
-   
-     const trackFind = playlist.tracks[1]
-     console.log(trackFind.trackName) 
-     console.log(trackFind);
-}
-showPlayList(playlist);
+playlist.showTrack();
+playlist.changeName("STARS");
+const countNum = playlist.countTracks()
+console.log(countNum);
+
+
+
+
+
+
+
