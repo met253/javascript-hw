@@ -75,7 +75,7 @@ const deliverPizza = (pizzaName) => `Delivering ${pizzaName} pizza.`;
    return arr;
  }; 
  
- const result = applyCallbackToEachElement(arr, squareCallback);
+ const result2 = applyCallbackToEachElement(arr, squareCallback);
  
  console.log(result); // [1, 4, 9, 16, 25]
  ///
