@@ -39,11 +39,16 @@ const playlist = {
      
     }
 }
+for (const key in playlist) {
+    console.log(playlist[key]);
+}
 playlist.showTrack();
 playlist.changeName("STARS");
 const countNum = playlist.countTracks()
 console.log(countNum);
 
+
+//
 
 
 
