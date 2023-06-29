@@ -1,2 +1,11 @@
 const fruits = ["apple", "orange", "melon"];
 console.log(fruits);
+console.log("apple", "orange", "melon");
+console.log(...fruits);
+const vegetables = ["carrot", "potato", "pea", "tomato"];
+let basket = [...fruits];
+console.log(basket);
+basket = [...vegetables];
+console.log(basket);
+basket = [...fruits, ...vegetables];
+console.log(basket);
