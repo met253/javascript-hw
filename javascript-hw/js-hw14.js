@@ -83,3 +83,11 @@ const product = {
 };
 
 console.log(product.name);
+//5
+
+const emailInputName = "email";
+const passwordInputName = "password";
+const credit1 = {
+  [emailInputName]: "henry.carter@aptmail.com",
+  [passwordInputName]: "jqueryismyjam",
+};
