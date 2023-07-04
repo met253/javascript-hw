@@ -54,3 +54,36 @@ const employeesHome = {
          } 
      }
 }
+//4
+const countTotalSalary = (employees) => {
+     const salaryArray = Object.values(employees);
+     let totalSalary = 0;
+     for (const salary of salaryArray) {
+       totalSalary += salary;
+     }
+     return totalSalary;
+   };
+   
+//5
+
+
+const getAllPropValues = (arr, prop) => {
+     const propValues = [];
+     for (const obj of arr) {
+       propValues.push(obj[prop]);
+     }
+     console.log(propValues);
+     return propValues;
+   };
+   
+   const ert = [
+     {
+       name: "susa",
+     },
+     {
+       name: "dsdf;asdf;asdf;sak;lf;salcv;zxlckv;lzxckv;zxlcvk;zxv;",
+     },
+   ];
+   
+   getAllPropValues(susa, "name");
+   
