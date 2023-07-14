@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
 </head>
 <body>
-
+    
                 <!-- JAVA SCRIPT -->
 
     <!-- <script src="./js/js5.js"></script> -->
@@ -22,11 +22,66 @@
     <!-- <script src="./javascript-hw/js-hw14.js"></script>  -->
     <!-- <script src="./classwork/spreat.js"></script> 
     <script src="./javascript-hw/js-hw15.js"></script>  -->
-    
-    <script src="./classwork/cw-2.js"></script> 
+    <!-- <script src="./javascript-hw/js-hw16.js"></script>
+    <button id="Withdraw">Withdraw money</button> -->
+    <!-- <script src="./classwork/cw-2.js"></script>  -->
                 <!-- JAVA SCRIPT -->
     
 
-                
+<!--                 
    <img src="https://hips.hearstapps.com/hmg-prod/images/cute-cat-photos-1593441022.jpg?crop=1.00xw:0.753xh;0,0.153xh&resize=1200:*" alt="cat" width="500px">
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deposit and Withdraw Money Example</title>
+</head>
+<body>
+  <label for="depositAmount">Enter amount to deposit:</label>
+  <input type="text" id="depositAmount" />
+  <button id="depositButton">Deposit</button>
+
+  <label for="withdrawAmount">Enter amount to withdraw:</label>
+  <input type="text" id="withdrawAmount" />
+  <button id="withdrawButton">Withdraw</button>
+
+  <script>
+    var accountBalance = 100; // Initial account balance
+
+    var depositButton = document.getElementById("depositButton");
+    var withdrawButton = document.getElementById("withdrawButton");
+
+    depositButton.addEventListener("click", function() {
+      var depositAmountInput = document.getElementById("depositAmount");
+      var depositAmount = parseFloat(depositAmountInput.value);
+
+      if (isNaN(depositAmount) || depositAmount <= 0) {
+        alert("Please enter a valid amount to deposit.");
+      } else {
+        accountBalance += depositAmount;
+        alert("You deposited $" + depositAmount + " into your account.");
+        depositAmountInput.value = ""; // Clear the input field
+      }
+    });
+
+    withdrawButton.addEventListener("click", function() {
+      var withdrawAmountInput = document.getElementById("withdrawAmount");
+      var withdrawAmount = parseFloat(withdrawAmountInput.value);
+
+      if (isNaN(withdrawAmount) || withdrawAmount <= 0) {
+        alert("Please enter a valid amount to withdraw.");
+      } else if (withdrawAmount > accountBalance) {
+        alert("Insufficient funds in your account.");
+      } else {
+        accountBalance -= withdrawAmount;
+        alert("You withdrew $" + withdrawAmount + " from your account.");
+        withdrawAmountInput.value = ""; // Clear the input field
+      }
+    });
+  </script>
+</body>
 </html>
