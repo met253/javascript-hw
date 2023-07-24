@@ -1,10 +1,8 @@
 const user = {
-
+     mood: "happy",
+     hobby: "skydiving",
+     premium: false
 }
-user.mood = "happy";
-user.hobby = "skydiving";
-user.premium = false;
-
 console.log(user)
 
 const userKeys = Object.keys(user);
