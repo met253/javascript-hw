@@ -1,91 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
-</head>
-<body>
-    
-                <!-- JAVA SCRIPT -->
 
-    <!-- <script src="./js/js5.js"></script> -->
-    <!-- <script src="./js/js-hw6.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No wayyyyyAIAIyuauiuy</title>
+  <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/OIP.TGHJ6pFqeYCnRIsnjY6GbgHaJ8?w=139&h=187&c=7&r=0&o=5&dpr=1.9&pid=1.7">
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+</head>
+
+<body>
+  <select name="clr" onchange="document.bgColor=this.options[this.selectedIndex].value" size="1">
+    <br>
+    <option value="black">black
+        <option value="orange">orange
+            <option value="flamingred">fuschia
+                <option value="lightyellow">light yellow
+                    <option value="green">green
+                        <option value="cyan">cyan
+                            <option value="yellow">yellow
+                                <option value="red">red
+                                    <option value="white">white</option>
+</select>&nbsp;&nbsp;Background Color
+
+<br>
+<select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
+    <br>
+    <option value="black">black
+        <option value="orange">orange
+            <option value="flamingred">fuschia
+                <option value="lightyellow">light yellow
+                    <option value="cyan">cyan
+                        <option value="yellow">yellow
+                            <option value="red">red
+                                <option value="white">white</option>
+</select>&nbsp;&nbsp;Text Color
+  <!-- JAVA SCRIPT -->
+
+  <!-- HOMEWORK -->
+
+  <!-- <script src="./js/js-hw6.js"></script>
     <script src="./js/js-hw7-js"></script> -->
-    <!-- <script src="./js/js-hw9.js"></script> -->
-    <!-- <script src="./javascript-hw/js-hw10.js"></script> -->
-     <!-- <script src="./classwork/objects.js"></script>  -->
-    <!-- <script src="./js practice/practice2.js"></script> -->
-    <!-- <script src="./javascript-hw/js-hw12.js"></script> -->
-    <!-- <script src="./javascript-hw/js-hw14.js"></script>  -->
-    <!-- <script src="./classwork/spreat.js"></script> 
-    <script src="./javascript-hw/js-hw15.js"></script>  -->
-    <!-- <script src="./javascript-hw/js-hw16.js"></script>-->
-    <!-- <script src="./javascript-hw/js-hw17.js"></script>-->
-    <!-- <script src="./javascript-hw/js-hw18.js"></script>-->
-    <script src="./javascript-hw/js-hw19.js"></script>
-      <!-- <script src="./javascript-hw/js-hw16.js"></script>
+  <!-- <script src="./js/js-hw9.js"></script> -->
+  <!-- <script src="./javascript-hw/js-hw10.js"></script> -->
+  <!-- <script src="./javascript-hw/js-hw12.js"></script> -->
+  <!-- <script src="./javascript-hw/js-hw14.js"></script>  -->
+  <!-- <script src="./javascript-hw/js-hw15.js"></script>  -->
+  <!-- <script src="./javascript-hw/js-hw16.js"></script>-->
+  <!-- <script src="./javascript-hw/js-hw17.js"></script>-->
+  <!-- <script src="./javascript-hw/js-hw18.js"></script>-->
+  <!-- <script src="./javascript-hw/js-hw19.js"></script> -->
+  <!-- <script src="./javascript-hw/js-hw16.js"></script> -->
+
+  <script src="./classwork/reduce.js" type="module"></script>
+  <script src="./classwork/reduce.js" type="module"></script>
+
+
+
+
+
+  <!-- <script src="./js/js5.js"></script> -->
+  <!-- <script src="./classwork/objects.js"></script>  -->
+  <!-- <script src="./js practice/practice2.js"></script> -->
+  <!-- <script src="./classwork/spreat.js"></script> 
     <button id="Withdraw">Withdraw money</button> -->
-    <!-- <script src="./classwork/cw-2.js"></script>  -->
-                <!-- JAVA SCRIPT -->
-    
-
-<!--                 
-   <img src="https://hips.hearstapps.com/hmg-prod/images/cute-cat-photos-1593441022.jpg?crop=1.00xw:0.753xh;0,0.153xh&resize=1200:*" alt="cat" width="500px">
-</html> -->
+  <!-- <script src="./classwork/cw-2.js"></script>  -->
+  <!-- JAVA SCRIPT -->
+                  
+   <img src="https://hips.hearstapps.com/hmg-prod/images/cute-cat-photos-1593441022.jpg?crop=1.00xw:0.753xh;0,0.153xh&resize=1200:*" alt="cat" width="300px">
+</html> 
 
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Deposit and Withdraw Money Example</title>
-</head>
-<body>
-  <label for="depositAmount">Enter amount to deposit:</label>
-  <input type="text" id="depositAmount" />
-  <button id="depositButton">Deposit</button>
+  <!DOCTYPE html>
+  <html>
 
-  <label for="withdrawAmount">Enter amount to withdraw:</label>
-  <input type="text" id="withdrawAmount" />
-  <button id="withdrawButton">Withdraw</button>
+  <head>
+    <title>Deposit and Withdraw Money Example</title>
+  </head>
 
-  <script>
-    var accountBalance = 100; // Initial account balance
+  <body>
+    <label for="depositAmount">Enter amount to deposit:</label>
+    <input type="text" id="depositAmount" />
+    <button id="depositButton">Deposit</button>
 
-    var depositButton = document.getElementById("depositButton");
-    var withdrawButton = document.getElementById("withdrawButton");
+    <label for="withdrawAmount">Enter amount to withdraw:</label>
+    <input type="text" id="withdrawAmount" />
+    <button id="withdrawButton">Withdraw</button>
 
-    depositButton.addEventListener("click", function() {
-      var depositAmountInput = document.getElementById("depositAmount");
-      var depositAmount = parseFloat(depositAmountInput.value);
+    <script>
+      var accountBalance = 100; // Initial account balance
 
-      if (isNaN(depositAmount) || depositAmount <= 0) {
-        alert("Please enter a valid amount to deposit.");
-      } else {
-        accountBalance += depositAmount;
-        alert("You deposited $" + depositAmount + " into your account.");
-        depositAmountInput.value = ""; // Clear the input field
-      }
-    });
+      var depositButton = document.getElementById("depositButton");
+      var withdrawButton = document.getElementById("withdrawButton");
 
-    withdrawButton.addEventListener("click", function() {
-      var withdrawAmountInput = document.getElementById("withdrawAmount");
-      var withdrawAmount = parseFloat(withdrawAmountInput.value);
+      depositButton.addEventListener("click", function () {
+        var depositAmountInput = document.getElementById("depositAmount");
+        var depositAmount = parseFloat(depositAmountInput.value);
 
-      if (isNaN(withdrawAmount) || withdrawAmount <= 0) {
-        alert("Please enter a valid amount to withdraw.");
-      } else if (withdrawAmount > accountBalance) {
-        alert("Insufficient funds in your account.");
-      } else {
-        accountBalance -= withdrawAmount;
-        alert("You withdrew $" + withdrawAmount + " from your account.");
-        withdrawAmountInput.value = ""; // Clear the input field
-      }
-    });
-  </script>
-</body>
-</html>
+        if (isNaN(depositAmount) || depositAmount <= 0) {
+          alert("Please enter a valid amount to deposit.");
+        } else {
+          accountBalance += depositAmount;
+          alert("You deposited $" + depositAmount + " into your account.");
+          depositAmountInput.value = ""; // Clear the input field
+        }
+      });
+
+      withdrawButton.addEventListener("click", function () {
+        var withdrawAmountInput = document.getElementById("withdrawAmount");
+        var withdrawAmount = parseFloat(withdrawAmountInput.value);
+
+        if (isNaN(withdrawAmount) || withdrawAmount <= 0) {
+          alert("Please enter a valid amount to withdraw.");
+        } else if (withdrawAmount > accountBalance) {
+          alert("Insufficient funds in your account.");
+        } else {
+          accountBalance -= withdrawAmount;
+          alert("You withdrew $" + withdrawAmount + " from your account.");
+          withdrawAmountInput.value = ""; // Clear the input field
+        }
+      });
+    </script>
+  </body>
+
+  </html>
