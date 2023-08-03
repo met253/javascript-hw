@@ -24,7 +24,21 @@
 //       friends: ["a", "b", "c"],
 //     },
 //   ];
-  //4
+//3
+// const guysFromMoon = [
+//   { name: 'idk', friends: 1 },
+//   { name: 'qwerty', friends: 2 },
+//   { name: 'wow', friends: 69 },
+//   { name: 'UWU', friends: 45 },
+//   { name: 'OWO', friends: 11 },
+//   { name: 'IWI', friends: 15 },
+// ];
+// function compareFriends(abc, def) {
+//   return abc.friends - def.friends;
+// }
+// guysFromMoon.sort(compareFriends);
+// console.log(guysFromMoon.map(person => person.name));
+//   //4
   // const knowladge = [
   //   { name: 'bas', skills: ['JavaScript', 'HTML', 'CSS'] },
   //   { name: 'las', skills: ['Python', 'Java', 'SASS'] },
