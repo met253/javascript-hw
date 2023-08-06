@@ -40,6 +40,19 @@ const eyeColors = (eyee) => {
   ];
   
   findSomePeople(nameGenders, "male");
+  //4
+
+const usersIsAcctive = [
+  { name: "waowo", isActive: true },
+  { name: "amongus", isActive: false },
+  { name: "John", isActive: true },
+  { name: "UWU", isActive: false },
+];
+
+
+const notActive = users.filter(user => !user.isActive);
+
+console.log(notActive);
   //5
   const users = [
     { name: "aa", email: "aa@gmail.com", age: 1 },
