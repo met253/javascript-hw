@@ -1,4 +1,4 @@
-//2
+//1
 function Account({ email, login }) {
     this.email = email;
     this.login = login;
